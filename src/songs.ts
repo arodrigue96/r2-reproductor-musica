@@ -68,6 +68,7 @@ export const getSongsCount = (songs: Song[]): number => {
 
 export const removeSongByPosition = (songs: Song[], position: number): void => {
   // Elimina del array de canciones recibido la canción que se encuentra en la posición recibida
+  songs.splice(position, 1);
 };
 
 export const setCurrentSong = (song: Song): void => {
