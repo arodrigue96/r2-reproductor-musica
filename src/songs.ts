@@ -20,10 +20,12 @@ export const addSong = (song: Song, songs: Song[]): void => {
 
 export const isPlaylistFull = (songs: Song[]): boolean => {
   let isFull: boolean;
-  // Asígnale a la variable isFull un true o un false dependiendo de si
-  // el array de títulos recibido tiene 4 o más elementos
 
-  isFull = false; // Cambia esta línea por tu código
+  if (songs.length >= 5) {
+    isFull = true;
+  } else {
+    isFull = false;
+  }
 
   return isFull;
 };
@@ -38,7 +40,7 @@ export const getErrorMessage = (errorCode: string): string => {
   // - "exists": "La canción ya existe"
   // - "limit": "La playlist está llena"
 
-  errorMessage = ""; // Cambia esta línea por tu código
+  errorMessage = "";
 
   return errorMessage;
 };
