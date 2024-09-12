@@ -5,7 +5,7 @@ export const areSameSong = (song: Song, songTitle: string): boolean => {
   // Asígnale a la variable areSame un true o un false dependiendo de si
   // el título de la canción recibida coincide con el título recibido
 
-  areSame = true; // Cambia esta línea por tu código
+  areSame = true;
 
   return areSame;
 };

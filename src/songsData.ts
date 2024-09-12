@@ -2,11 +2,9 @@
 // Servirá para tipar las canciones que tienes más abajo
 export type Song = {
   title: string;
-  duration: number;
-  artist: string;
-  album: string;
-  genre: string;
-  releaseYear: number;
+  durationInSeconds: number;
+  credits: string;
+  isCurrent: boolean;
 };
 
 export const existingSongs: Song[] = [
