@@ -15,6 +15,7 @@ export const areSameSong = (song: Song, songTitle: string): boolean => {
 
 export const addSong = (song: Song, songs: Song[]): void => {
   // Añade la canción recibida al array de canciones recibido
+  songs.push(song);
 };
 
 export const isPlaylistFull = (songs: Song[]): boolean => {
