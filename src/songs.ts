@@ -39,8 +39,20 @@ export const getErrorMessage = (errorCode: string): string => {
   // Éstos son los códigos de error y sus mensajes correspondientes:
   // - "exists": "La canción ya existe"
   // - "limit": "La playlist está llena"
+  switch (errorCode) {
+    case "exists":
+      errorMessage = "La canción ya existe";
+      break;
 
-  errorMessage = "";
+    case "limit":
+      errorMessage = "La playlist está llena";
+      break;
+
+    default:
+      errorMessage =
+        "Se ha producido un error. Por favor, reinicia la aplicación";
+      break;
+  }
 
   return errorMessage;
 };
