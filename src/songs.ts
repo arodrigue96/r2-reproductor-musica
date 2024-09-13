@@ -87,7 +87,7 @@ export const getNextSongPosition = (
   // Si la canción actual es la última, la siguiente será la primera
 
   nextSongPosition = currentSongPosition + 1;
-  if (nextSongPosition > songs.length) {
+  if (nextSongPosition === songs.length) {
     nextSongPosition = 0;
   }
 
